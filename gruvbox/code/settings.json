@@ -1,0 +1,8 @@
+{
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "window.titleBarStyle": "custom", //change color menubar
+    "editor.fontFamily": "'Fira Code",
+    "editor.fontWeight": "660",
+    "editor.fontSize": 15,
+    "workbench.iconTheme": "gruvbox-material-icon-theme"
+}
