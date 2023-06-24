@@ -47,7 +47,12 @@
 ## Installation
 - First, you need install some things important to have running for a smooth Wayland/Hyprland in <a href="https://wiki.hyprland.org/Useful-Utilities/Must-have/">here</a>
 
-- Then,  install these and then copy my config files into your ~/.config folder
+- Clone [gruvbox branch](https://github.com/theshy-arch/hyprland-dotfiles/tree/gruvbox) : 
+```shell
+git clone -b gruvbox https://github.com/theshy-arch/hyprland-dotfiles
+```
+
+-  Install these and then copy my config files into your ~/.config folder
 
 ```shell
 yay -S kitty hyprland-git waybar-hyprland-git xdg-desktop-portal-hyprland pipewire wireplumber grim slurp pulseaudio pavucontrol brightnessctl alsa-utils xf86-video-intel thunar swaybg ttf-font-awesome rofi neofetch htop cava wlogout mako polkit-gnome qt6-wayland
