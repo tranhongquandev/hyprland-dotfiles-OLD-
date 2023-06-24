@@ -62,7 +62,11 @@ yay -S kitty hyprland-git waybar-hyprland-git xdg-desktop-portal-hyprland pipewi
 
 - Install  font awesome : ``` yay -S  ttf-font-awesome ```
 
-- Clone <a href="https://github.com/theshy-arch/fotns">this repo</a> and copy all file .tff to ``` ~/.local/share/fonts``` 
+- Clone <a href ="https://github.com/theshy-arch/hyprland-dotfiles/tree/fonts">this branch</a>
+```shell
+git clone -b fonts https://github.com/theshy-arch/hyprland-dotfiles
+```
+- copy all file .tff to ``` ~/.local/share/fonts``` 
 then run : ``` fc-cache -f -v ```
 
 ## SHELL Setups
