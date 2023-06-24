@@ -54,4 +54,4 @@ neofetch
 - Copy file ```starship.toml ``` to ```~/.config/```
 
 ## Special thanks to
-https://github.com/0bCdian/Hyprland_dotfiles for the base config
+https://github.com/1amSimp1e/dots for base configs
