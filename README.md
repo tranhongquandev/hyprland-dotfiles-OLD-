@@ -2,7 +2,7 @@
 
 <div align="justify">
     <div align="center">
-            <img src="https://github.com/theshy-arch/catpuccin-hyprland-dotfiles/assets/95228594/d3ab06d6-dea4-411b-b3e1-65b0105eb07c" alt="catppuccin">
+            <img src="https://github.com/theshy-arch/hyprland-dotfiles/assets/95228594/0697663f-24a3-4f9e-b6e6-ac2c02fb0074" alt="catppuccin">
     </div>
 </div>
 
