@@ -1,6 +1,10 @@
+
+
+### PREVIEW
+
 <div align="justify">
     <div align="center">
-      <img src="https://github.com/theshy-arch/hyprland-dotfiles/assets/95228594/99761551-9592-405c-bc72-e41cb56c360a">
+      <img src="https://github.com/theshy-arch/hyprland-dotfiles/assets/95228594/99761551-9592-405c-bc72-e41cb56c360a" alt="preview.png">
 </div> 
 
 ## Programs and other resources used
