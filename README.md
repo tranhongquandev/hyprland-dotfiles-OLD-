@@ -39,7 +39,7 @@ git clone -b fonts https://github.com/theshy-arch/hyprland-dotfiles
  ```shell
     chsh -s /usr/bin/fish
  ```
-- Install [Oh-my-fish](https://github.com/oh-my-fish/oh-my-fish) and [themes](https://github.com/catppuccin/fish)
+- Install [Oh-my-fish](https://github.com/oh-my-fish/oh-my-fish) and [themes](https://github.com/catppuccin/fish) , [exa icons] (https://the.exa.website/install)
 
 - Install [StarShip Prompt](https://starship.rs/guide/#%F0%9F%9A%80-installation)
  ```shell
