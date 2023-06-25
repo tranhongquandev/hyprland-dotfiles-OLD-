@@ -8,7 +8,7 @@
     "height": 0,
     "modules-left": ["custom/logo","wlr/workspaces","hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["network","backlight","pulseaudio","pulseaudio#microphone","battery","tray"],
+    "modules-right": ["backlight","pulseaudio","pulseaudio#microphone","battery","network","tray"],
     
     "hyprland/window": {
         "format": "{}"

@@ -52,14 +52,15 @@ tooltip label{
 #backlight {
     background: #1e1e2e;
     opacity: 0.8;
-    padding: 0px 10px;
+    padding: 0px 5px;
     margin: 3px 0px;
     margin-top: 5px;
     border: 0px;
 }
-#backlight, #custom-logo {
+#backlight,#custom-logo {
 
     border-radius: 10px 0px 0px 10px;
+    padding-left: 10px;
 }
 
 #clock{
@@ -68,9 +69,12 @@ tooltip label{
 }
 
 #network {
-    margin-right: 10px;
+    color: #89b4fa;
     border-radius: 10px;
-    color: #8DDEE0;
+    font-size: 11;
+    margin-right: 10px;
+    padding-left: 10px;
+
 }
 
 #tray {
@@ -91,6 +95,7 @@ tooltip label{
     border-radius: 10px;
     margin-left: 10px;
     margin-right: 20px;
+    padding: 0px 10px;
     color: #A98FD8;
 }
 
