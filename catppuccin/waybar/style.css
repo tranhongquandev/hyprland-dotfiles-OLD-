@@ -3,12 +3,12 @@
     border-radius: 0;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     min-height: 0;
 }
 
 window#waybar {
-    background: rgba(21, 18, 27, 0);
+    background: transparent;
     color: #cdd6f4;
 }
 
@@ -35,87 +35,65 @@ tooltip label{
     color: #a6adc8;
 }
 
-#workspaces button.focused {
-    color: #a6adc8;
-    background: #eba0ac;
-    border-radius: 10px;
-}
-
-#workspaces button.urgent {
-    color: #11111b;
-    background: #a6e3a1;
-    border-radius: 10px;
-}
-
 #workspaces button:hover {
-    background: #11111b;
-    color: #cdd6f4;
-    border-radius: 10px;
+    background: transparent;
+    color: transparent;
 }
 
-#custom-launch_wofi,
-#custom-power_btn,
+#custom-logo,
 #window,
-#cpu,
-#disk,
-#memory,
 #clock,
 #battery,
 #pulseaudio,
-#network,
 #tray,
-#temperature,
 #workspaces,
+#network,
 #backlight {
     background: #1e1e2e;
     opacity: 0.8;
     padding: 0px 10px;
     margin: 3px 0px;
-    margin-top: 10px;
+    margin-top: 5px;
     border: 0px;
 }
+#backlight, #custom-logo {
 
-#temperature, #backlight, #custom-launch_wofi, #cpu {
     border-radius: 10px 0px 0px 10px;
 }
 
-#workspaces, #pulseaudio.microphone, #battery, #disk {
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px;
-}
-
-#temperature.critical {
-    color: #e92d4d;
-}
 #clock{
     border-radius: 10px 10px 10px 10px;
+    color: #DCBABA;
+}
+
+#network {
+    margin-right: 10px;
+    border-radius: 10px;
+    color: #8DDEE0;
 }
 
 #tray {
     padding-right : 10px;
-    border-radius : 10px
-}
-#custom-power_btn {
-    margin-right : 20px;
-    margin-left : 10px;
-    padding-right : 13px;
     border-radius : 10px;
-    
+    margin-right : 10px;
 }
-
 
 #workspaces {
     padding-right: 0px;
     padding-left: 5px;
+    border-radius: 0px 10px 10px 0px;
+    color: #A98FD8;
 }
+
 
 #window {
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 20px;
+    color: #A98FD8;
 }
 
-#custom-launch_wofi {
+#custom-logo {
     color: #89b4fa;
     margin-left: 10px;
     border-right: 0px;
@@ -136,4 +114,21 @@ tooltip label{
 #battery {
     color: #a6e3a1;
     border-left: 0px;
+    margin-right: 10px;
+    border-radius: 0px 10px 10px 0px;
+    padding-right: 15px;
+}
+@keyframes blink {
+    to {
+        color: #E17719;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: #bd0035;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }

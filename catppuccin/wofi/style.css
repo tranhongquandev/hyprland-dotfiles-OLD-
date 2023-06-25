@@ -1,9 +1,9 @@
 window {
-  margin: 0px;
+  margin: 5px;
   border: 5px solid #303347;
   background-color: #14151e;
   font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free Solid";
-  font-size: 13px;
+  font-size: 12px;
 }
 
 @keyframes gradient_f {
@@ -22,19 +22,17 @@ window {
   all: unset;
   min-height: 36px;
   padding: 4px 10px;
-  margin: 4px;
+  margin: 10px;
   border: none;
   color: #ffffff;
   font-weight: bold;
   background-color: #14151e;
   outline: none;
   border-radius: 15px;
-  margin: 10px;
-  margin-bottom: 2px;
 }
 
 #inner-box {
-  margin: 4px;
+  margin: 0px;
   padding: 10px;
   font-weight: bold;
   border-radius: 15px;
@@ -43,7 +41,6 @@ window {
 #outer-box {
   margin: 0px;
   padding: 3px;
-  border: none;
   border: 5px solid #14151e;
 }
 
@@ -53,7 +50,9 @@ window {
   border-radius: 15px;
   margin-bottom: 5px;
 }
-
+#text {
+  margin-left: 10px;
+}
 #text:selected {
   color: #14151e;
   margin: 0px 0px;
@@ -69,9 +68,9 @@ window {
 }
 
 #entry:selected {
-  margin: 0px 0px;
+  margin: 5px 0px;
   border: none;
   border-radius: 15px;
-  background: linear-gradient(90deg, #99e6bf 0%, #b6d8e2 100%);
+  background: linear-gradient(90deg, #99e6bf 0%, #DAB8B9 100%);
 }
 

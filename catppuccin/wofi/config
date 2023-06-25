@@ -1,5 +1,5 @@
-width=400
-height=500
+width=800
+height=300
 show=drun
 prompt=Search...
 filter_rate=100
@@ -12,3 +12,4 @@ insensitive=true
 allow_images=true
 image_size=40
 gtk_dark=true
+column=2

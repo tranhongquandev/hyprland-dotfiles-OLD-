@@ -6,49 +6,17 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 0,
-    "modules-left": ["custom/launch_wofi","wlr/workspaces","cpu","memory","disk","hyprland/window"],
+    "modules-left": ["custom/logo","wlr/workspaces","hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["temperature","battery","backlight","pulseaudio","pulseaudio#microphone","tray","custom/power_btn"],
+    "modules-right": ["network","backlight","pulseaudio","pulseaudio#microphone","battery","tray"],
     
     "hyprland/window": {
         "format": "{}"
     },
 
-    "custom/launch_wofi": {
+    "custom/logo": {
         "format": "",
-        "on-click": "pkill wofi; wofi -n",
         "tooltip": false
-    },
-
-     "custom/power_btn": {
-        "format": "",
-        "on-click": "nwgbar",
-        "tooltip": false
-    },
-
-    "cpu": {
-        "interval": 10,
-        "format": " {usage}%",
-        "max-length": 10,
-        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
-    },
-
-    "disk": {
-        "interval": 30,
-        "format": "󰋊 {percentage_used}%",
-        "path": "/",
-        "tooltip": true,
-        "tooltip-format": "HDD - {used} used out of {total} on {path} ({percentage_used}%)",
-        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
-    },
-
-    "memory": {
-        "interval": 30,
-        "format": " {}%",
-        "max-length": 10,
-        "tooltip": true,
-        "tooltip-format": "Memory - {used:0.1f}GB used",
-        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
     },
     "wlr/workspaces": {
         "disable-scroll": true,
@@ -67,24 +35,12 @@
             "10": []
         }
     },
-    
-
-   "custom/weather": {
-        //shows the current weather and forecast
-        "tooltip" : true,
-        "format" : "{}",
-        "interval" : 30,
-        "exec" : "~/.config/waybar/scripts/waybar-wttr.py",
-        "return-type" : "json"
-    },
-
     "tray": {
         "icon-size": 18,
         "spacing": 10
     },
 
     "clock": {
-        //"format": "{:%I:%M %p}",
         "format": "  {:%a %d %b  %T %p}",
         "format-alt": "  {:%d/%m/%Y  %T %p}",
         "tooltip": true,
@@ -118,8 +74,8 @@
         "format": "{icon} {volume}%",
         "format-muted": "",
         "on-click": "pavucontrol",
-        "on-scroll-up": "pamixer -i 5",
-        "on-scroll-down": "pamixer -d 5",
+        "on-scroll-up": "amixer set Master 5%+ ",
+        "on-scroll-down": "amixer set Master 5%-",
         "scroll-step": 5,
         "format-icons": {
             "headphone": "",
@@ -136,18 +92,18 @@
         "format": "{format_source}",
         "format-source": " {volume}%",
         "format-source-muted": "",
-        "on-click": "pamixer --default-source -t",
+        "on-click": "amixer set Capture toggle",
         "on-click-right": "pavucontrol",
-        "on-scroll-up": "pamixer --default-source -i 5",
-        "on-scroll-down": "pamixer --default-source -d 5",
+        "on-scroll-up": "amixer set Capture 5%+",
+        "on-scroll-down": "amixer set Capture 5%-",
         "scroll-step": 5
     },
-    
-    "temperature": {
-        "thermal-zone": 1,
-        "format": " {temperatureF}°F",
-        "critical-threshold": 70,
-        "format-critical": " {temperatureC}°C",
-        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
-    }
+    "network": {
+        "interval": 1,
+        "format-wifi": "<span foreground='#cdd6f4'>說</span> {essid} ",
+        "format-ethernet": "<span foreground='#cdd6f4'></span> {ifname} ({ipaddr})",
+        "format-linked": "<span foreground='#cdd6f4'>說</span> {essid} (No IP)",
+        "format-disconnected": "<span foreground='#cdd6f4'>說</span> Disconnected",
+        "tooltip": false
+      }
 }

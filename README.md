@@ -10,7 +10,7 @@
 
 - Install requirement packages :  
 ```shell
-yay -S hyprland-git waybar-hyprland wofi dunst kitty swaybg swayidle alsa-utils brightnessctl pavucontrol pacman-contrib thunar python-requests grim slurp network-manager-applet nwg-launchers lf neovim cava btop pipewire neofetch pulseaudio x86-video-intel xdg-desktop-portal-hyprland wireplumber polkit-gnome qt6-wayland
+yay -S hyprland-git waybar-hyprland wofi dunst kitty swaybg swayidle  brightnessctl pavucontrol alsa-utls  thunar grim slurp network-manager-applet lf neovim cava btop neofetch pulseaudio x86-video-intel xdg-desktop-portal-hyprland polkit-gnome qt6-wayland
 ```
 
 - Clone this [branch](https://github.com/theshy-arch/hyprland-dotfiles/tree/catppuccin) :
@@ -39,11 +39,13 @@ git clone -b fonts https://github.com/theshy-arch/hyprland-dotfiles
  ```shell
     chsh -s /usr/bin/fish
  ```
- - Install [StarShip Prompt](https://starship.rs/guide/#%F0%9F%9A%80-installation)
+- Install [Oh-my-fish](https://github.com/oh-my-fish/oh-my-fish) and [themes](https://github.com/catppuccin/fish)
+
+- Install [StarShip Prompt](https://starship.rs/guide/#%F0%9F%9A%80-installation)
  ```shell
  pacman -S starship
  ```
- - Add this command to ```~/.config/fish/config.fish```
+- Add this command to ```~/.config/fish/config.fish```
 ```shell
 
 starship init fish | source
