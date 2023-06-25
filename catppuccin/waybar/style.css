@@ -37,7 +37,8 @@ tooltip label{
 
 #workspaces button:hover {
     background: transparent;
-    color: transparent;
+    color: #f2cdcd;
+    border-radius: 10px;
 }
 
 #custom-logo,
